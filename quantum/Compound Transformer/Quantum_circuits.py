@@ -1,4 +1,4 @@
-#Circuits are clearly explained in TASK VIII QViT paper circuits.ipynb
+#Circuits are clearly explained in QViT paper circuits.ipynb
 
 import cirq
 from cirq import ops
@@ -37,7 +37,7 @@ class RBSGate(cirq.Gate):
         return "[RBS({:.2f})]".format(self.theta), "[RBS({:.2f})]".format(self.theta)
 
 def convert_array(X):
-    X = tf.cast(X, dtype=tf.float32)  # Cast X to float32
+    X = tf.cast(X, dtype=tf.float32)  
     alphas = tf.zeros(X.shape[:-1] + (X.shape[-1]-1,), dtype=X.dtype)
     X_normd = X / (tf.sqrt(tf.reduce_sum(X**2, axis=-1, keepdims=True))+ 1e-10) # 1e-10 is added to prevent divisions by 0
     for i in range(X.shape[-1]-1):
