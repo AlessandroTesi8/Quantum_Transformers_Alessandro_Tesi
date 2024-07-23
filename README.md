@@ -6,6 +6,13 @@ My work is primarily based on TensorFlow Quantum, a robust software framework th
 
 Furthermore, I draw inspiration and insights from last year's Google Summer of Code (GSoC) projects focused on Quantum Vision Transformers. These projects, documented in detail on [Sal's GSoC blog](https://salcc.github.io/blog/gsoc23/) and [Eyüp B. Ünlü's Medium post](https://medium.com/@eyupb.unlu/gsoc-2023-with-ml4sci-quantum-transformer-for-high-energy-physics-analysis-final-report-cd9ed594e4a2).
 
+## Datasets
+
+The architectures have been evaluated on the following datasets:
+
+- [MNIST Digits](http://yann.lecun.com/exdb/mnist/), as a toy dataset for rapid prototyping
+- [Quark-Gluon](https://arxiv.org/abs/1902.08276), one of the main high-energy physics datasets used in the project, which contains images of the recordings of the CMS detector of quark and gluon jets.
+- [Electron-Photon](https://arxiv.org/abs/1807.11916), the other main high-energy physics dataset used in the project, which contains images of the recordings of the CMS detector of electron and photon showers.
 
 ## Structure
 
@@ -40,3 +47,7 @@ The `quantum` directory is subdivided into folders representing different quantu
 - **`README.md`**: This file provides an overview of the project, its objectives, and its structure.
 - **`requirements.txt`**: Lists the dependencies and libraries required to run the notebooks and scripts in this project.
 - **`LICENSE`**: Contains the licensing information for the project.
+
+## Contact
+
+If you have any questions, feel free to email me at tesi.alessandro88 in gmail
